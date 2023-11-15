@@ -72,11 +72,17 @@ body{
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(103, 133, 103);
     text-align: center;
     padding: 15px 0;
 }
 
 .rodape-imagem {
     height: 60px;
+}
+
+.titulo {
+    color: rgb(146, 73, 73); 
+    font-size: xx-large;
+    padding: 20px 0;
 }

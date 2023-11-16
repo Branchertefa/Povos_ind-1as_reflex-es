@@ -50,7 +50,7 @@ body{
 }
 
 .estudante-imagem {
-    width: 120px;
+    width: 50vw;
 }
 
 .estudante-icone {
@@ -59,6 +59,7 @@ body{
 
 .estudante-div {
     text-align: center;
+    margin: 2.9vw;
 }
 
 .estudante-titulo {
@@ -85,4 +86,17 @@ footer {
     color: rgb(146, 73, 73); 
     font-size: xx-large;
     padding: 20px 0;
+}
+
+.mds {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-column: 1fr;
+    grid-row: auto;
+}
+
+.mds img{
+    margin: auto;
 }

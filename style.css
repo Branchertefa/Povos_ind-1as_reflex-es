@@ -100,8 +100,18 @@ footer {
 .mds img{
     margin: auto;
 }
+
+.estudante-nome{
+    font-size: 2vw;
+    text-align: center;
+}
+
 @media (min-width: 1750px) {
     .estudante-imagem {
         width: 50vw;
+    }
+
+    .estudante-nome{
+        font-size: 4vw;
     }
   }

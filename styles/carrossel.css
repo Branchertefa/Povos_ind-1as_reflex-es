@@ -73,6 +73,14 @@
     text-decoration: none;
 }
 
+
+.descricao__imagem{
+    width: 12vw;
+    height: 15vw;
+    object-fit: cover;
+    margin-left: 1vw;
+}
+
 @media screen and (min-width: 1024px) {
     .carrossel__titulo {
         font-size: 26px;

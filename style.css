@@ -1,117 +1,30 @@
-* {
-    margin: 0;
-    padding: 0 0;
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #a2caa2;
+    --branco: #ffffff;
+    --laranja: #5aeb00;
+    --azul-degrade: linear-gradient(97.54deg, #165200 35.49%, #328953 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #045200;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.cabecalho {
-    background-color: #ddedd9;
-    color: rgb(7, 7, 7);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
-
+.descricao__imagem{
+ width: 10vw;
 }
-
-.cabecalho-imagem {
-    width: 20%;
-}
-
-.cabecalho-lista-item {
-    display: inline-block;
-    margin: 0 16px;
-    padding: 24px 0;
-    font-size: 24px;
-}
-
-.escola-imagem {
-    width: 25%;
-}
-
-.escola {
-    background-image: linear-gradient(#ddedd9,#4b7653);
-    color: rgb(15, 15, 15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
-}
-
-.escola-div-conteudo {
-    width: 35%;
-}
-
-.escola-titulo {
-    padding: 24px 0;
-}
-
-.estudante-imagem {
-    width: 35vw;
-}
-
-.estudante-icone {
-    width: 24px;
-}
-
-.estudante-div {
-    text-align: center;
-    margin: 3.9vw;
-}
-
-.estudante-titulo {
-    text-align: center;
-    padding: 100px 0;
-}
-
-.estudante-todos {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-}
-
-footer {
-    background-color: rgb(103, 133, 103);
-    text-align: center;
-    padding: 15px 0;
-}
-
-.rodape-imagem {
-    height: 60px;
-}
-
-.titulo {
-    color: rgb(146, 73, 73); 
-    font-size: xx-large;
-    padding: 20px 0;
-}
-
-.mds {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: grid;
-    grid-column: 1fr;
-    grid-row: auto;
-}
-
-.mds img{
-    margin: auto;
-}
-
-.estudante-nome{
-    font-size: 2vw;
-    text-align: center;
-}
-
-@media (min-width: 1750px) {
-    .estudante-imagem {
-        width: 50vw;
-    }
-
-    .estudante-nome{
-        font-size: 4vw;
-    }
-  }

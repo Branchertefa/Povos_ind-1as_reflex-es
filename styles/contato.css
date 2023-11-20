@@ -17,8 +17,9 @@
 }
 
 .contato__texto {
-    font-weight: 300;
+    font-weight: 400;
     margin: 1em 0;
+    font-family: var(--fonte-secundario);
 }
 
 .contato__email {
@@ -30,7 +31,7 @@
 }
 
 .contato__email::placeholder {
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-secundario);
     color: var(--azul);
     background: url("../img/Email.svg") no-repeat;
     padding-left: 2em;

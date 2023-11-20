@@ -1,11 +1,16 @@
 .carrossel__titulo {
-    color: var(--laranja);
+    color: rgb(98, 146, 58);
     background-color: var(--branco);
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
-    padding: 1em 0 0.5em 0;
+    padding: 1em 0 1em 0;
+}
+
+.carrossel{
+    position: relative;
+    z-index: 1;
 }
 
 .swiper-slide img {
@@ -40,7 +45,8 @@
 .card {
     background: var(--branco);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 1vw;
+    width: 50vw;
     margin: 1em;
     padding: 1em;
 }
@@ -58,7 +64,8 @@
 }
 
 .descrição__texto {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: var(--fonte-secundario);
 }
 
 .botões__item {
@@ -66,11 +73,14 @@
 }
 
 .botões__ancora {
-    background-color: var(--laranja);
+    background-color: rgba(78, 196, 24, 0.65);
+    border-radius: .5vw;
+    border: solid .1vw rgba(87, 155, 18, 0.658);
     padding: 1em 2.2em;
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
+    font-family: var(--fonte-secundario);
 }
 
 
@@ -101,7 +111,7 @@
     }
 
     .card {
-        width: 40%;
+        width: 50vw;
         margin: 2em auto;
     }
 }

@@ -133,3 +133,31 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+.item_scroll {
+    filter: opacity(0);
+    transition: .75s ease-in-out;
+}
+
+.item_scroll.scrollou {
+    filter: opacity(1);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: .575vw;
+    position: fixed;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .1vw;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
+    background-color: var(--cor-principal);
+}

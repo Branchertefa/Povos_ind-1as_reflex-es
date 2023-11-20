@@ -5,9 +5,10 @@
 }
 
 .tópicos__titulo {
+    margin-top: .75vw;
     color: var(--branco);
     font-weight: 300;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 .tópicos__lista {
@@ -22,11 +23,14 @@
 
 .tópicos__link {
     color: var(--branco);
-    padding: 1em;
-    background-color: var(--laranja);
+    padding: .75em;
+    background-color: rgba(60, 60, 60, 0.35);
     text-decoration: none;
+    border-radius: .5vw;
+    border: solid .1vw var(--branco);
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: var(--fonte-secundario);
 }
 
 @media screen and (min-width: 1024px) {

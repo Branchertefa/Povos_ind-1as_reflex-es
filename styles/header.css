@@ -16,28 +16,44 @@
 }
 
 .cabeçalho {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.225);
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
 }
 
 .container {
     display: flex;
     align-items: center;
+    font-family: var(--fonte-secundario);
+}
+
+.opções{
+    font-family: var(--fonte-secundario);
 }
 
 .container__imagem {
     padding: 1em;
-    width: 8vw;
+    width: 2vw;
+}
+
+.logo{
+    width: 6vw;
 }
 
 .lista-menu {
+    position: relative;
+    z-index: 2;
     display: none;
     position: absolute;
     top: 100%;
     width: 60vw;
+    font-family: var(--fonte-secundario);
 }
 
 .container__botao:checked~.lista-menu {
@@ -69,6 +85,8 @@
 
 .container__titulo {
     display: none;
+    font-family: "Josefin Sans";
+    font-size: 30px;
 }
 
 .opções {
@@ -81,19 +99,15 @@
 
 @media screen and (min-width: 1024px) {
 
-    .container__titulo,
-    .container__titulo--negrito {
-        font-family: var(--fonte-secundario);
-        font-size: 30px;
-    }
-
     .container__titulo {
         font-weight: 400;
         display: block;
+        font-size: 27px;
     }
 
     .container__titulo--negrito {
         font-weight: 700;
+        font-size: 30px;
     }
 
     .opções {
